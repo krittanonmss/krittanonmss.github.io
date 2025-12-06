@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "title": "Personal Portfolio Website",
+    "description": "A portfolio website built with HTML/CSS and JavaScript Showcases my skills, projects, and contact information.",
+    "techStack": ["HTML", "CSS", "JavaScript", "GitHub"],
+    "github": "https://github.com/krittanonmss/krittanonmss.github.io",
+    "liveDemo": "https://krittanonmss.github.io/"
+  }
+]
