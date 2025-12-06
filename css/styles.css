@@ -29,6 +29,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .nav-logo {
@@ -326,6 +327,19 @@ footer {
 
 /* --- Responsive --- */
 @media (max-width: 768px) {
+  .nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+    width: auto;
+  }
+
   h1 {
     font-size: 2rem;
   }
@@ -345,6 +359,13 @@ footer {
 
   .skill-item {
     width: 100px;
+  }
+
+  .skill-tags {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 คอลัมน์ */
+    gap: 1rem;
+    justify-items: center;
   }
 
   .projects-carousel-wrapper {
