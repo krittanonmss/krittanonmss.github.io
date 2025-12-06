@@ -144,7 +144,6 @@ h1 {
   color: #2c3e50;
 }
 
-/* Full width row for each category */
 .skill-tags {
   display: flex;
   flex-wrap: wrap;
@@ -181,66 +180,19 @@ h1 {
   margin-bottom: 1.5rem;
   color: #333;
 }
-.projects-grid {
-  margin-top: 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  justify-items: center;
-}
-
-.project-card {
-  background-color: #f7f8fa;
-  border-radius: 1rem;
-  padding: 1rem;
-  text-align: center;
-  width: 100%;
-  max-width: 350px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
-}
-
-.project-title {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-
-.project-description {
-  font-size: 0.95rem;
-  margin-bottom: 0.5rem;
-  color: #555;
-}
-
-.project-tech {
-  font-size: 0.85rem;
-  color: #777;
-  margin-bottom: 0.75rem;
-}
-
-.project-links a {
-  margin: 0 0.5rem;
-  text-decoration: none;
-  color: #1a73e8;
-  font-weight: 500;
-}
 
 .projects-carousel-wrapper {
   display: flex;
-  align-items: center;       /* กึ่งกลางแนวตั้ง */
-  justify-content: center;   /* กึ่งกลางแนวนอน */
+  align-items: center;
+  justify-content: center;
   gap: 1rem;
   overflow: hidden;
   position: relative;
   width: 100%;
-  max-width: 1000px;         /* ขนาดสูงสุดของ carousel */
-  margin: 0 auto;            /* กึ่งกลางแนวนอน */
+  max-width: 1000px;
+  margin: 0 auto;
   padding: 1rem 0;
 }
-
 
 .projects-carousel {
   display: flex;
@@ -275,6 +227,30 @@ h1 {
   box-shadow: 0 6px 16px rgba(0,0,0,0.12);
 }
 
+.project-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-description {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.project-tech {
+  font-size: 0.85rem;
+  color: #777;
+  margin-bottom: 0.75rem;
+}
+
+.project-links a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: #1a73e8;
+  font-weight: 500;
+}
+
 .carousel-btn {
   position: absolute;
   top: 50%;
@@ -303,7 +279,6 @@ h1 {
   -moz-user-select: none;
   -ms-user-select: none;
 }
-
 
 /* --- Contact --- */
 .contact-block {
@@ -347,4 +322,65 @@ footer {
   background-color: #2c3e50;
   color: #fff;
   font-size: 0.9rem;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .description {
+    font-size: 0.95rem;
+  }
+
+  .btn-primary, .btn-secondary {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .skill-item {
+    width: 100px;
+  }
+
+  .projects-carousel-wrapper {
+    gap: 0.5rem;
+  }
+
+  .project-card {
+    min-width: 240px;
+    max-width: 280px;
+  }
+
+  .carousel-btn {
+    font-size: 1.2rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .skill-tags {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects-carousel-wrapper {
+    flex-direction: column;
+  }
 }
