@@ -1,19 +1,41 @@
 [
   {
     "id": 1,
-    "title": "Personal Portfolio Website",
-    "description": "A portfolio website built with HTML/CSS and JavaScript Showcases my skills, projects, and contact information.",
+    "title": {
+      "en": "Personal Portfolio Website"
+    },
+    "description": {
+      "en": "A portfolio website built with HTML/CSS and JavaScript. Showcases my skills, projects, and contact information.",
+      "th": "เว็บไซต์พอร์ตโฟลิโอที่พัฒนาด้วย HTML/CSS และ JavaScript สำหรับแสดงทักษะ ผลงาน และข้อมูลติดต่อ"
+    },
     "techStack": ["HTML", "CSS", "JavaScript", "GitHub"],
     "github": "https://github.com/krittanonmss/krittanonmss.github.io",
     "liveDemo": "https://krittanonmss.github.io/"
-  }
-  ,
+  },
   {
     "id": 2,
-    "title": "PAPAIWAT",
-    "description": "A Laravel-based CMS and tourism platform for managing Thai temple information, articles, media, pages, menus, and admin workflows.",
+    "title": {
+      "en": "PAPAIWAT"
+    },
+    "description": {
+      "en": "A Laravel-based CMS and tourism platform for managing Thai temple information, articles, media, pages, menus, and admin workflows.",
+      "th": "ระบบ CMS และแพลตฟอร์มท่องเที่ยวสำหรับจัดการข้อมูลวัดไทย บทความ รูปภาพ หน้าเว็บไซต์ เมนู และระบบแอดมิน พัฒนาด้วย Laravel"
+    },
     "techStack": ["Laravel", "PHP", "MySQL", "Tailwind CSS", "JavaScript"],
     "github": "https://github.com/krittanonmss/PAPAIWAT",
     "liveDemo": ""
+  },
+  {
+    "id": 3,
+    "title": {
+      "en": "Car Service Tracker Demo"
+    },
+    "description": {
+      "en": "An internal vehicle service management system for tracking customers, vehicles, vehicle tax renewals, insurance, and inspection expiration dates. Includes a dashboard for monitoring service status, CSV import support, and SMS notification features for customer reminders. This demo version was built using HTML, Tailwind CSS, and vanilla JavaScript for presentation purposes only. The actual production source code and backend system are not publicly available.",
+      "th": "ระบบจัดการบริการรถยนต์ภายในองค์กร สำหรับติดตามข้อมูลลูกค้า รถยนต์ วันหมดอายุภาษี ประกันภัย และตรวจสภาพรถ พร้อมระบบแดชบอร์ดติดตามสถานะบริการ รองรับการนำเข้าข้อมูลผ่าน CSV และระบบแจ้งเตือน SMS สำหรับเตือนลูกค้าเกี่ยวกับบริการที่ใกล้หมดอายุ โดยเวอร์ชันนี้เป็นเพียง Demo ที่พัฒนาด้วย HTML, Tailwind CSS และ JavaScript แบบ Vanilla เพื่อใช้สำหรับสาธิตการทำงานเท่านั้น ส่วน Source Code และระบบ Backend จริงไม่ได้เปิดเผยสู่สาธารณะ"
+    },
+    "techStack": ["HTML5", "Tailwind CSS", "JavaScript", "GitHub Pages"],
+    "github": "https://github.com/krittanonmss/car-service-tracker-demo",
+    "liveDemo": "https://www.krittanon.site/car-service-tracker-demo/"
   }
 ]

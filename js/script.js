@@ -1,8 +1,4 @@
-tailwind.config = {
-  darkMode: 'class'
-};
-
-const html = document.getElementById('html-root');
+const html = document.documentElement;
 
 const savedTheme = localStorage.getItem('theme');
 
@@ -81,6 +77,19 @@ const translations = {
 };
 
 let currentLanguage = localStorage.getItem('language') || 'en';
+let loadedProjects = [];
+
+function getLocalizedText(value) {
+  if (typeof value === 'string') {
+    return value;
+  }
+
+  if (value && typeof value === 'object') {
+    return value[currentLanguage] || value.en || '';
+  }
+
+  return '';
+}
 
 function updateThemeIcons() {
   const sunIcon = document.getElementById('theme-icon-sun');
@@ -112,6 +121,70 @@ function updateLanguageButtons(language) {
   });
 }
 
+function renderProjects() {
+  const container = document.getElementById('projects-container');
+
+  if (!container) return;
+
+  container.innerHTML = '';
+
+  loadedProjects.forEach((project) => {
+    const card = document.createElement('article');
+    card.className = 'flex min-w-[280px] max-w-[320px] flex-none flex-col rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl dark:border-white/10 dark:bg-white/[0.04]';
+
+    const title = document.createElement('h3');
+    title.className = 'text-lg font-bold text-slate-950 dark:text-white';
+    title.textContent = getLocalizedText(project.title);
+
+    const description = document.createElement('p');
+    description.className = 'mt-3 text-sm leading-6 text-slate-500 dark:text-slate-400';
+    description.textContent = getLocalizedText(project.description);
+
+    const tech = document.createElement('p');
+    tech.className = 'text-xs font-medium uppercase tracking-wide text-blue-600 dark:text-blue-300';
+    tech.textContent = Array.isArray(project.techStack) ? project.techStack.join(', ') : '';
+
+    const links = document.createElement('div');
+    links.className = 'mt-auto flex flex-wrap gap-2 pt-5';
+
+    if (project.github) {
+      const githubLink = document.createElement('a');
+      githubLink.href = project.github;
+      githubLink.target = '_blank';
+      githubLink.rel = 'noopener noreferrer';
+      githubLink.dataset.projectLink = 'github';
+      githubLink.className = 'rounded-xl bg-slate-950 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800 dark:bg-white dark:text-slate-950 dark:hover:bg-slate-200';
+      githubLink.textContent = translations[currentLanguage]['projects.github'];
+
+      links.appendChild(githubLink);
+    }
+
+    if (project.liveDemo) {
+      const demoLink = document.createElement('a');
+      demoLink.href = project.liveDemo;
+      demoLink.target = '_blank';
+      demoLink.rel = 'noopener noreferrer';
+      demoLink.dataset.projectLink = 'liveDemo';
+      demoLink.className = 'rounded-xl border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-100 dark:border-white/10 dark:text-white dark:hover:bg-white/10';
+      demoLink.textContent = translations[currentLanguage]['projects.liveDemo'];
+
+      links.appendChild(demoLink);
+    }
+
+    const bottom = document.createElement('div');
+    bottom.className = 'mt-auto pt-5';
+
+    bottom.appendChild(tech);
+    bottom.appendChild(links);
+
+    card.appendChild(title);
+    card.appendChild(description);
+    card.appendChild(bottom);
+
+    container.appendChild(card);
+  });
+}
+
 function setLanguage(language) {
   currentLanguage = language;
   localStorage.setItem('language', language);
@@ -130,7 +203,7 @@ function setLanguage(language) {
   });
 
   updateLanguageButtons(language);
-  updateProjectButtonLabels();
+  renderProjects();
 }
 
 function scrollToBlock(id) {
@@ -144,19 +217,6 @@ function scrollToBlock(id) {
   }
 }
 
-function updateProjectButtonLabels() {
-  const githubLinks = document.querySelectorAll('[data-project-link="github"]');
-  const liveDemoLinks = document.querySelectorAll('[data-project-link="liveDemo"]');
-
-  githubLinks.forEach((link) => {
-    link.textContent = translations[currentLanguage]['projects.github'];
-  });
-
-  liveDemoLinks.forEach((link) => {
-    link.textContent = translations[currentLanguage]['projects.liveDemo'];
-  });
-}
-
 document.addEventListener('DOMContentLoaded', () => {
   updateThemeIcons();
   setLanguage(currentLanguage);
@@ -165,9 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (themeToggle) {
     themeToggle.addEventListener('click', () => {
-      html.classList.toggle('dark');
-
-      const isDark = html.classList.contains('dark');
+      const isDark = html.classList.toggle('dark');
 
       localStorage.setItem('theme', isDark ? 'dark' : 'light');
 
@@ -239,58 +297,8 @@ document.addEventListener('DOMContentLoaded', () => {
   fetch('projects.json')
     .then((res) => res.json())
     .then((projects) => {
-      const container = document.getElementById('projects-container');
-
-      projects.forEach((project) => {
-        const card = document.createElement('article');
-        card.className = 'min-w-[280px] max-w-[320px] flex-none rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl dark:border-white/10 dark:bg-white/[0.04]';
-
-        const title = document.createElement('h3');
-        title.className = 'text-lg font-bold text-slate-950 dark:text-white';
-        title.textContent = project.title;
-
-        const description = document.createElement('p');
-        description.className = 'mt-3 text-sm leading-6 text-slate-500 dark:text-slate-400';
-        description.textContent = project.description;
-
-        const tech = document.createElement('p');
-        tech.className = 'mt-4 text-xs font-medium uppercase tracking-wide text-blue-600 dark:text-blue-300';
-        tech.textContent = Array.isArray(project.techStack) ? project.techStack.join(', ') : '';
-
-        const links = document.createElement('div');
-        links.className = 'mt-5 flex flex-wrap gap-2';
-
-        if (project.github) {
-          const githubLink = document.createElement('a');
-          githubLink.href = project.github;
-          githubLink.target = '_blank';
-          githubLink.rel = 'noopener noreferrer';
-          githubLink.dataset.projectLink = 'github';
-          githubLink.className = 'rounded-xl bg-slate-950 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800 dark:bg-white dark:text-slate-950 dark:hover:bg-slate-200';
-          githubLink.textContent = translations[currentLanguage]['projects.github'];
-
-          links.appendChild(githubLink);
-        }
-
-        if (project.liveDemo) {
-          const demoLink = document.createElement('a');
-          demoLink.href = project.liveDemo;
-          demoLink.target = '_blank';
-          demoLink.rel = 'noopener noreferrer';
-          demoLink.dataset.projectLink = 'liveDemo';
-          demoLink.className = 'rounded-xl border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-100 dark:border-white/10 dark:text-white dark:hover:bg-white/10';
-          demoLink.textContent = translations[currentLanguage]['projects.liveDemo'];
-
-          links.appendChild(demoLink);
-        }
-
-        card.appendChild(title);
-        card.appendChild(description);
-        card.appendChild(tech);
-        card.appendChild(links);
-
-        container.appendChild(card);
-      });
+      loadedProjects = projects;
+      renderProjects();
     })
     .catch((err) => console.error(err));
 
@@ -362,3 +370,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+
