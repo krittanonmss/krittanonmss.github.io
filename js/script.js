@@ -221,25 +221,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (image) {
       image.classList.add('h-9', 'w-9', 'object-contain');
-      image.style.width = '36px';
-      image.style.height = '36px';
-      image.style.objectFit = 'contain';
     }
   });
 
-  const skillItems = document.querySelectorAll('.skill-item');
+  const socialIcons = document.querySelectorAll('.social-icon');
 
-  skillItems.forEach((item) => {
-    item.className = 'skill-item flex min-h-32 flex-col items-center justify-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 p-4 text-center text-sm font-medium text-slate-700 transition hover:-translate-y-1 hover:bg-white hover:shadow-lg dark:border-white/10 dark:bg-slate-950/40 dark:text-slate-200 dark:hover:bg-white/10';
+  socialIcons.forEach((item) => {
+    item.className = 'social-icon inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 transition hover:-translate-y-1 hover:bg-white hover:shadow-lg dark:border-white/10 dark:bg-white/10 dark:hover:bg-white/15';
 
     const image = item.querySelector('img');
 
     if (image) {
-      image.classList.add('object-contain');
-
-      image.style.width = '36px';
-      image.style.height = '36px';
-      image.style.objectFit = 'contain';
+      image.classList.add('h-5', 'w-5', 'dark:invert');
     }
   });
 
