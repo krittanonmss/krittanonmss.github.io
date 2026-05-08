@@ -2,7 +2,8 @@
   {
     "id": 1,
     "title": {
-      "en": "Personal Portfolio Website"
+      "en": "Personal Portfolio Website",
+      "th": "Personal Portfolio Website"
     },
     "description": {
       "en": "A portfolio website built with HTML/CSS and JavaScript. Showcases my skills, projects, and contact information.",
@@ -15,7 +16,8 @@
   {
     "id": 2,
     "title": {
-      "en": "PAPAIWAT"
+      "en": "PAPAIWAT",
+      "th": "PAPAIWAT"
     },
     "description": {
       "en": "A Laravel-based CMS and tourism platform for managing Thai temple information, articles, media, pages, menus, and admin workflows.",
@@ -28,7 +30,8 @@
   {
     "id": 3,
     "title": {
-      "en": "Car Service Tracker Demo"
+      "en": "Car Service Tracker",
+      "th": "Car Service Tracker"
     },
     "description": {
       "en": "An internal vehicle service management system for tracking customers, vehicles, vehicle tax renewals, insurance, and inspection expiration dates. Includes a dashboard for monitoring service status, CSV import support, and SMS notification features for customer reminders. This demo version was built using HTML, Tailwind CSS, and vanilla JavaScript for presentation purposes only. The actual production source code and backend system are not publicly available.",
