@@ -85,7 +85,7 @@ function getLocalizedText(value) {
   }
 
   if (value && typeof value === 'object') {
-    return value[currentLanguage] || value.en || '';
+    return value[currentLanguage] || value.en || value.th || '';
   }
 
   return '';
@@ -130,7 +130,7 @@ function renderProjects() {
 
   loadedProjects.forEach((project) => {
     const card = document.createElement('article');
-    card.className = 'flex min-w-[280px] max-w-[320px] flex-none flex-col rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl dark:border-white/10 dark:bg-white/[0.04]';
+    card.className = 'flex min-h-[374px] min-w-[280px] max-w-[320px] flex-none flex-col rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl dark:border-white/10 dark:bg-white/[0.04]';
 
     const title = document.createElement('h3');
     title.className = 'text-lg font-bold text-slate-950 dark:text-white';
@@ -140,12 +140,15 @@ function renderProjects() {
     description.className = 'mt-3 text-sm leading-6 text-slate-500 dark:text-slate-400';
     description.textContent = getLocalizedText(project.description);
 
+    const bottom = document.createElement('div');
+    bottom.className = 'mt-auto pt-5';
+
     const tech = document.createElement('p');
     tech.className = 'text-xs font-medium uppercase tracking-wide text-blue-600 dark:text-blue-300';
     tech.textContent = Array.isArray(project.techStack) ? project.techStack.join(', ') : '';
 
     const links = document.createElement('div');
-    links.className = 'mt-auto flex flex-wrap gap-2 pt-5';
+    links.className = 'mt-5 flex flex-wrap gap-2';
 
     if (project.github) {
       const githubLink = document.createElement('a');
@@ -170,9 +173,6 @@ function renderProjects() {
 
       links.appendChild(demoLink);
     }
-
-    const bottom = document.createElement('div');
-    bottom.className = 'mt-auto pt-5';
 
     bottom.appendChild(tech);
     bottom.appendChild(links);
