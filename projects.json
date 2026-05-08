@@ -7,4 +7,13 @@
     "github": "https://github.com/krittanonmss/krittanonmss.github.io",
     "liveDemo": "https://krittanonmss.github.io/"
   }
+  ,
+  {
+    "id": 2,
+    "title": "PAPAIWAT",
+    "description": "A Laravel-based CMS and tourism platform for managing Thai temple information, articles, media, pages, menus, and admin workflows.",
+    "techStack": ["Laravel", "PHP", "MySQL", "Tailwind CSS", "JavaScript"],
+    "github": "https://github.com/krittanonmss/PAPAIWAT",
+    "liveDemo": ""
+  }
 ]

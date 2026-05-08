@@ -1,195 +1,212 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth" id="html-root">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kritanon Museesut - Portfolio</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
 
-  <nav class="navbar">
-    <div class="nav-container">
-      <div class="nav-logo">Krittanonmss</div>
-      <div class="nav-links">
-        <a href="#introduction">Home</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/script.js" defer></script>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased dark:bg-slate-950 dark:text-slate-100">
+
+  <nav class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/80 backdrop-blur-xl dark:border-white/10 dark:bg-slate-950/80">
+    <div class="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-4 sm:flex-row sm:items-center sm:justify-between">
+      <div class="text-xl font-bold tracking-tight text-slate-950 dark:text-white">
+        Krittanonmss
+      </div>
+
+      <div class="flex flex-wrap gap-2 text-sm font-medium text-slate-600 dark:text-slate-300">
+        <a href="#introduction" data-i18n="nav.home" class="rounded-full px-4 py-2 transition hover:bg-slate-100 hover:text-slate-950 dark:hover:bg-white/10 dark:hover:text-white">Home</a>
+        <a href="#skills" data-i18n="nav.skills" class="rounded-full px-4 py-2 transition hover:bg-slate-100 hover:text-slate-950 dark:hover:bg-white/10 dark:hover:text-white">Skills</a>
+        <a href="#projects" data-i18n="nav.projects" class="rounded-full px-4 py-2 transition hover:bg-slate-100 hover:text-slate-950 dark:hover:bg-white/10 dark:hover:text-white">Projects</a>
+        <a href="#contact" data-i18n="nav.contact" class="rounded-full px-4 py-2 transition hover:bg-slate-100 hover:text-slate-950 dark:hover:bg-white/10 dark:hover:text-white">Contact</a>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <button
+          id="theme-toggle"
+          type="button"
+          aria-label="Toggle theme"
+          class="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white p-2.5 text-slate-700 transition hover:bg-slate-100 dark:border-white/10 dark:bg-white/10 dark:text-white dark:hover:bg-white/15"
+        >
+          <svg id="theme-icon-sun" xmlns="http://www.w3.org/2000/svg" class="hidden h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m8-9h1M3 12H2m15.364 6.364.707.707M5.636 5.636l-.707-.707m12.728 0-.707.707M5.636 18.364l-.707.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
+          </svg>
+
+          <svg id="theme-icon-moon" xmlns="http://www.w3.org/2000/svg" class="hidden h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 1012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+        </button>
+
+        <button
+          type="button"
+          class="language-button rounded-full border border-slate-200 bg-white px-3 py-2 text-xs font-semibold text-slate-700 transition hover:bg-slate-100 dark:border-white/10 dark:bg-white/10 dark:text-white dark:hover:bg-white/15"
+          data-language="th"
+        >
+          TH
+        </button>
+
+        <button
+          type="button"
+          class="language-button rounded-full border border-slate-200 bg-white px-3 py-2 text-xs font-semibold text-slate-700 transition hover:bg-slate-100 dark:border-white/10 dark:bg-white/10 dark:text-white dark:hover:bg-white/15"
+          data-language="en"
+        >
+          EN
+        </button>
       </div>
     </div>
   </nav>
 
-  <!-- BLOCK 1: INTRODUCTION -->
-  <section id="introduction" class="block intro-block">
-    <div class="container">
-      <div class="intro-content">
-        <img src="project/img/krittanon.jpg" alt="Kritanon Museesut" class="profile-pic">
-        <h1>Kritanon Museesut</h1>
-        <p class="subtitle">Computer Science Student @ Kasetsart University</p>
-        <p class="description">Passionate about Web Development, Backend Engineering, and DevOps</p>
-        <div class="buttons">
-          <button class="btn-primary" onclick="scrollToBlock('projects')">View Projects</button>
-          <button class="btn-secondary" onclick="window.open('https://github.com/krittanonmss', '_blank')">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-            </svg>
-            GitHub
-          </button>
+  <main>
+    <section id="introduction" class="relative overflow-hidden px-4 py-24">
+      <div class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,#dbeafe,transparent_35%),radial-gradient(circle_at_bottom_right,#e0e7ff,transparent_30%)] dark:bg-[radial-gradient(circle_at_top,#1e3a8a55,transparent_35%),radial-gradient(circle_at_bottom_right,#4f46e555,transparent_30%)]"></div>
+
+      <div class="mx-auto max-w-6xl">
+        <div class="mx-auto max-w-3xl rounded-3xl border border-slate-200 bg-white/75 p-8 text-center shadow-xl shadow-slate-200/60 backdrop-blur dark:border-white/10 dark:bg-white/[0.04] dark:shadow-slate-950/40 sm:p-12">
+          <img src="project/img/krittanon.jpg" alt="Kritanon Museesut" class="mx-auto mb-6 h-40 w-40 rounded-full border-4 border-white object-cover shadow-xl dark:border-white/10">
+
+          <p data-i18n="hero.badge" class="mb-3 text-sm font-semibold uppercase tracking-[0.28em] text-blue-600 dark:text-blue-300">Portfolio</p>
+
+          <h1 data-i18n="hero.name" class="text-4xl font-bold tracking-tight text-slate-950 dark:text-white sm:text-5xl">
+            Kritanon Museesut
+          </h1>
+
+          <p data-i18n="hero.role" class="mt-4 text-lg font-medium text-slate-600 dark:text-slate-300">
+            Computer Science Student @ Kasetsart University
+          </p>
+
+          <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+            <button
+              id="view-projects-button"
+              type="button"
+              data-i18n="hero.viewProjects"
+              class="inline-flex items-center justify-center rounded-2xl bg-slate-950 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-slate-300/70 transition hover:-translate-y-0.5 hover:bg-slate-800 dark:bg-white dark:text-slate-950 dark:shadow-slate-950/40 dark:hover:bg-slate-200"
+            >
+              View Projects
+            </button>
+
+            <button
+              id="github-button"
+              type="button"
+              class="inline-flex items-center justify-center gap-2 rounded-2xl border border-slate-200 bg-white px-6 py-3 text-sm font-semibold text-slate-800 shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-100 dark:border-white/10 dark:bg-white/10 dark:text-white dark:hover:bg-white/15"
+            >
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              <span data-i18n="hero.github">GitHub</span>
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-
-    <!-- BLOCK 2: SKILLS -->
-    <section id="skills" class="block skills-block">
-  <div class="container">
-    <h2>Skills & Technologies</h2>
-
-    <!-- Programming Languages -->
-    <div class="skill-card">
-      <h3>Programming Languages</h3>
-      <div class="skill-tags">
-        <div class="skill-item">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="PHP Logo">
-          <span>PHP</span>
-        </div>
-        <div class="skill-item">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript Logo">
-          <span>JavaScript</span>
-        </div>
-        <div class="skill-item">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" alt="SQL Logo">
-          <span>SQL</span>
-        </div>
-        <div class="skill-item">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python Logo">
-          <span>Python</span>
-        </div>
-        <div class="skill-item">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java Logo">
-          <span>Java</span>
-        </div>
-        <div class="skill-item learning">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" alt="Go Logo">
-          <span>Go (Learning)</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Tools & Collaboration -->
-    <div class="skill-card">
-      <h3>Tools & Collaboration</h3>
-      <div class="skill-tags">
-        <div class="skill-item">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="Git Logo">
-          <span>Git</span>
-        </div>
-        <div class="skill-item">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" alt="GitHub Logo">
-          <span>GitHub</span>
-        </div>
-        <div class="skill-item">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="Linux Logo">
-          <span>Linux CLI</span>
-        </div>
-        <div class="skill-item">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/notion/notion-original.svg" alt="Notion Logo">
-          <span>Notion</span>
-        </div>
-        <div class="skill-item">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jira/jira-original.svg" alt="Jira Logo">
-          <span>Jira</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Frameworks & Technologies -->
-    <div class="skill-card">
-      <h3>Frameworks & Technologies</h3>
-      <div class="skill-tags">
-        <div class="skill-item">
-          <img src="https://laravel.com/img/logomark.min.svg" alt="Laravel Logo">
-          <span>Laravel</span>
-        </div>
-        <div class="skill-item">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="React Logo">
-          <span>React</span>
-        </div>
-        <div class="skill-item">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="Node.js Logo">
-          <span>Node.js</span>
-        </div>
-        <div class="skill-item">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" alt="MySQL Logo">
-          <span>MySQL</span>
-        </div>
-        <div class="skill-item">
-          <img src="icon/tailwind.png" alt="TailwindCSS Logo">
-          <span>TailwindCSS</span>
-        </div>
-        <div class="skill-item">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML Logo">
-          <span>HTML</span>
-        </div>
-        <div class="skill-item">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cloudflare/cloudflare-original.svg" alt="Cloudflare Logo">
-          <span>Cloudflare</span>
-        </div>
-        <div class="skill-item">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/azure/azure-plain.svg" alt="Azure Logo">
-          <span>Azure</span>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-
-  <!-- BLOCK 3: PROJECTS -->
-  <section id="projects" class="block projects-block">
-  <div class="container">
-    <h2>Featured Projects</h2>
-    <div class="projects-carousel-wrapper">
-      <button class="carousel-btn prev">&lt;</button>
-      <div class="projects-carousel" id="projects-container">
-
-      </div>
-      <button class="carousel-btn next">&gt;</button>
-    </div>
-  </div>
-</section>
-
-
-  <!-- BLOCK 4: CONTACT -->
-    <section id="contact" class="block contact-block">
-    <div class="container">
-        <h2>Get In Touch</h2>
-        <p class="contact-subtitle">Feel free to reach out for collaborations or just a friendly chat</p>
-        
-        <p>Email: <a href="mailto:krittanon.mss@gmail.com">krittanon.mss@gmail.com</a></p>
-        <p>Phone: <a href="tel:+66800010240">(+66) 80 001 0240</a></p>
-        
-        <a href="https://www.instagram.com/krittanon_m/" target="_blank" class="social-icon">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" />
-        </a>
-        <a href="https://www.linkedin.com/in/krittanon-museesut-7945a4311/" target="_blank" class="social-icon">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" />
-        </a>
-        <a href="https://line.me/ti/p/wY6jaiLyZp" target="_blank" class="social-icon">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/line.svg" alt="LINE" />
-        </a>
-    </div>
     </section>
 
+    <section id="skills" class="px-4 py-20">
+      <div class="mx-auto max-w-6xl">
+        <div class="mb-12 text-center">
+          <p data-i18n="skills.badge" class="text-sm font-semibold uppercase tracking-[0.25em] text-blue-600 dark:text-blue-300">Skills</p>
+          <h2 data-i18n="skills.title" class="mt-3 text-3xl font-bold tracking-tight text-slate-950 dark:text-white sm:text-4xl">
+            Skills & Technologies
+          </h2>
+        </div>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Kritanon Museesut. All rights reserved.</p>
+        <div class="space-y-6">
+          <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-white/[0.04]">
+            <h3 data-i18n="skills.programming" class="mb-5 text-lg font-bold text-slate-950 dark:text-white">Programming Languages</h3>
+            <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+              <div class="skill-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="PHP Logo"><span>PHP</span></div>
+              <div class="skill-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript Logo"><span>JavaScript</span></div>
+              <div class="skill-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" alt="SQL Logo"><span>SQL</span></div>
+              <div class="skill-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python Logo"><span>Python</span></div>
+              <div class="skill-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java Logo"><span>Java</span></div>
+            </div>
+          </div>
+
+          <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-white/[0.04]">
+            <h3 data-i18n="skills.tools" class="mb-5 text-lg font-bold text-slate-950 dark:text-white">Tools & Collaboration</h3>
+            <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+              <div class="skill-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="Git Logo"><span>Git</span></div>
+              <div class="skill-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" alt="GitHub Logo"><span>GitHub</span></div>
+              <div class="skill-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="Linux Logo"><span>Linux CLI</span></div>
+              <div class="skill-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/notion/notion-original.svg" alt="Notion Logo"><span>Notion</span></div>
+              <div class="skill-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jira/jira-original.svg" alt="Jira Logo"><span>Jira</span></div>
+            </div>
+          </div>
+
+          <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-white/[0.04]">
+            <h3 data-i18n="skills.frameworks" class="mb-5 text-lg font-bold text-slate-950 dark:text-white">Frameworks & Technologies</h3>
+            <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+              <div class="skill-item"><img src="https://laravel.com/img/logomark.min.svg" alt="Laravel Logo"><span>Laravel</span></div>
+              <div class="skill-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="React Logo"><span>React</span></div>
+              <div class="skill-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="Node.js Logo"><span>Node.js</span></div>
+              <div class="skill-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" alt="MySQL Logo"><span>MySQL</span></div>
+              <div class="skill-item"><img src="icon/tailwind.png" alt="TailwindCSS Logo"><span>TailwindCSS</span></div>
+              <div class="skill-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML Logo"><span>HTML</span></div>
+              <div class="skill-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cloudflare/cloudflare-original.svg" alt="Cloudflare Logo"><span>Cloudflare</span></div>
+              <div class="skill-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/azure/azure-plain.svg" alt="Azure Logo"><span>Azure</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="px-4 py-20">
+      <div class="mx-auto max-w-6xl">
+        <div class="mb-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p data-i18n="projects.badge" class="text-sm font-semibold uppercase tracking-[0.25em] text-blue-600 dark:text-blue-300">Projects</p>
+            <h2 data-i18n="projects.title" class="mt-3 text-3xl font-bold tracking-tight text-slate-950 dark:text-white sm:text-4xl">
+              Featured Projects
+            </h2>
+          </div>
+
+          <div class="flex gap-2">
+            <button type="button" class="carousel-btn prev rounded-2xl border border-slate-200 bg-white px-4 py-3 text-slate-700 shadow-sm transition hover:bg-slate-100 dark:border-white/10 dark:bg-white/10 dark:text-white dark:hover:bg-white/15">
+              &lt;
+            </button>
+            <button type="button" class="carousel-btn next rounded-2xl border border-slate-200 bg-white px-4 py-3 text-slate-700 shadow-sm transition hover:bg-slate-100 dark:border-white/10 dark:bg-white/10 dark:text-white dark:hover:bg-white/15">
+              &gt;
+            </button>
+          </div>
+        </div>
+
+        <div id="projects-container" class="flex cursor-grab gap-5 overflow-x-auto pb-4 [scrollbar-width:none] active:cursor-grabbing [&::-webkit-scrollbar]:hidden"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="px-4 py-20">
+      <div class="mx-auto max-w-3xl rounded-3xl border border-slate-200 bg-white p-8 text-center shadow-sm dark:border-white/10 dark:bg-white/[0.04] sm:p-10">
+        <p data-i18n="contact.badge" class="text-sm font-semibold uppercase tracking-[0.25em] text-blue-600 dark:text-blue-300">Contact</p>
+        <h2 data-i18n="contact.title" class="mt-3 text-3xl font-bold tracking-tight text-slate-950 dark:text-white">
+          Get In Touch
+        </h2>
+        <p data-i18n="contact.subtitle" class="mt-3 text-slate-500 dark:text-slate-400">
+          Feel free to reach out for collaborations or just a friendly chat
+        </p>
+
+        <div class="mt-8 space-y-3 text-sm">
+          <p><span data-i18n="contact.email">Email</span>: <a class="font-medium text-blue-600 hover:underline dark:text-blue-300" href="mailto:krittanon.mss@gmail.com">krittanon.mss@gmail.com</a></p>
+          <p><span data-i18n="contact.phone">Phone</span>: <a class="font-medium text-blue-600 hover:underline dark:text-blue-300" href="tel:+66800010240">(+66) 80 001 0240</a></p>
+        </div>
+
+        <div class="mt-8 flex justify-center gap-3">
+          <a href="https://www.instagram.com/krittanon_m/" target="_blank" rel="noopener noreferrer" class="social-icon">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram">
+          </a>
+          <a href="https://www.linkedin.com/in/krittanon-museesut-7945a4311/" target="_blank" rel="noopener noreferrer" class="social-icon">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn">
+          </a>
+          <a href="https://line.me/ti/p/wY6jaiLyZp" target="_blank" rel="noopener noreferrer" class="social-icon">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/line.svg" alt="LINE">
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-200 bg-white px-4 py-8 text-center text-sm text-slate-500 dark:border-white/10 dark:bg-slate-950 dark:text-slate-400">
+    <p data-i18n="footer.copyright">&copy; 2025 Kritanon Museesut. All rights reserved.</p>
   </footer>
-
-  <script src="js/script.js"></script>
 </body>
 </html>
