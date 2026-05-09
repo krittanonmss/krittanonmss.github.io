@@ -30,7 +30,7 @@
   {
     "id": 3,
     "title": {
-      "en": "Car Service Tracker",
+      "en": "Car Service Tracker ",
       "th": "Car Service Tracker"
     },
     "description": {
@@ -40,5 +40,19 @@
     "techStack": ["HTML5", "Tailwind CSS", "JavaScript", "GitHub Pages"],
     "github": "https://github.com/krittanonmss/car-service-tracker-demo",
     "liveDemo": "https://www.krittanon.site/car-service-tracker-demo/"
+  },
+  {
+    "id": 4,
+    "title": {
+      "en": "Premium Product Landing Page",
+      "th": "Premium Product Landing Page"
+    },
+    "description": {
+      "en": "A premium product landing page demo built with HTML, Tailwind CSS, custom CSS, and vanilla JavaScript. Designed to showcase a modern product presentation style with smooth scroll animations, responsive layout, bilingual content support, product highlight sections, pricing CTA, and Apple-inspired visual effects. This project is created as a frontend demo for presenting landing page design capabilities to potential freelance clients.",
+      "th": "เว็บไซต์ Landing Page สำหรับนำเสนอสินค้าแบบพรีเมียม พัฒนาด้วย HTML, Tailwind CSS, Custom CSS และ JavaScript แบบ Vanilla ออกแบบเพื่อแสดงตัวอย่างการนำเสนอสินค้าในสไตล์ทันสมัย พร้อม Animation ตอนเลื่อนหน้า รองรับ Responsive Layout รองรับสองภาษา มีส่วนแสดงจุดเด่นสินค้า ราคา ปุ่ม Call to Action และเอฟเฟกต์ภาพแบบ Apple-inspired โดยโปรเจกต์นี้จัดทำเป็น Frontend Demo สำหรับนำเสนอความสามารถด้านการออกแบบ Landing Page ให้ลูกค้าที่สนใจจ้างงาน"
+    },
+    "techStack": ["HTML5", "Tailwind CSS", "CSS3", "JavaScript", "GitHub Pages"],
+    "github": "https://github.com/krittanonmss/Landing-page-demo",
+    "liveDemo": ""
   }
 ]
