@@ -54,5 +54,31 @@
     "techStack": ["HTML5", "Tailwind CSS", "CSS3", "JavaScript", "GitHub Pages"],
     "github": "https://github.com/krittanonmss/Landing-page-demo",
     "liveDemo": "https://www.krittanon.site/Landing-page-demo/"
+  },
+  {
+    "id": 5,
+    "title": {
+      "en": "TableSchedule",
+      "th": "TableSchedule"
+    },
+    "description": {
+      "en": "A responsive class schedule generator built with HTML, CSS, and
+      vanilla JavaScript. Users can paste copied course information to
+      automatically detect course codes, sections, instructors, rooms, days, and
+      times. Features multiple schedule themes, mobile-friendly views, local
+      browser processing, and PNG export in 1920x1080 and full-size formats.",
+      "th": "เว็บสร้างตารางเรียนอัตโนมัติ พัฒนาด้วย HTML, CSS และ JavaScript แบบ Vanilla
+      ผู้ใช้สามารถวางข้อมูลรายวิชาที่คัดลอกมา เพื่อให้ระบบตรวจจับรหัสวิชา หมู่เรียน ผู้สอน ห้อง วัน
+      และเวลา พร้อมรองรับหลายธีม การแสดงผลบนมือถือ การประมวลผลภายในเบราว์เซอร์
+      และดาวน์โหลดตารางเป็น PNG ขนาด 1920x1080 หรือแบบ Full Size"
+    },
+    "techStack": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "GitHub Pages"
+    ],
+    "github": "https://github.com/krittanonmss/TableSchedule",
+    "liveDemo": "https://www.krittanon.site/TableSchedule/"
   }
 ]
