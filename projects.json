@@ -6,8 +6,8 @@
       "th": "Personal Portfolio Website"
     },
     "description": {
-      "en": "A portfolio website built with HTML/CSS and JavaScript. Showcases my skills, projects, and contact information.",
-      "th": "เว็บไซต์พอร์ตโฟลิโอที่พัฒนาด้วย HTML/CSS และ JavaScript สำหรับแสดงทักษะ ผลงาน และข้อมูลติดต่อ"
+      "en": "A portfolio website built with HTML, CSS, and JavaScript. Showcases my skills, projects, and contact information.",
+      "th": "เว็บไซต์พอร์ตโฟลิโอที่พัฒนาด้วย HTML, CSS และ JavaScript สำหรับแสดงทักษะ ผลงาน และข้อมูลติดต่อ"
     },
     "techStack": ["HTML", "CSS", "JavaScript", "GitHub"],
     "github": "https://github.com/krittanonmss/krittanonmss.github.io",
@@ -30,7 +30,7 @@
   {
     "id": 3,
     "title": {
-      "en": "Car Service Tracker ",
+      "en": "Car Service Tracker",
       "th": "Car Service Tracker"
     },
     "description": {
@@ -48,7 +48,7 @@
       "th": "Premium Product Landing Page"
     },
     "description": {
-      "en": "A premium product landing page demo built with HTML, Tailwind CSS, custom CSS, and vanilla JavaScript. Designed to showcase a modern product presentation style with smooth scroll animations, responsive layout, bilingual content support, product highlight sections, pricing CTA, and Apple-inspired visual effects. This project is created as a frontend demo for presenting landing page design capabilities to potential freelance clients.",
+      "en": "A premium product landing page demo built with HTML, Tailwind CSS, custom CSS, and vanilla JavaScript. Designed to showcase a modern product presentation style with smooth scroll animations, responsive layout, bilingual content support, product highlight sections, pricing CTA, and Apple-inspired visual effects. This project was created as a frontend demo to showcase landing page design capabilities for potential freelance clients.",
       "th": "เว็บไซต์ Landing Page สำหรับนำเสนอสินค้าแบบพรีเมียม พัฒนาด้วย HTML, Tailwind CSS, Custom CSS และ JavaScript แบบ Vanilla ออกแบบเพื่อแสดงตัวอย่างการนำเสนอสินค้าในสไตล์ทันสมัย พร้อม Animation ตอนเลื่อนหน้า รองรับ Responsive Layout รองรับสองภาษา มีส่วนแสดงจุดเด่นสินค้า ราคา ปุ่ม Call to Action และเอฟเฟกต์ภาพแบบ Apple-inspired โดยโปรเจกต์นี้จัดทำเป็น Frontend Demo สำหรับนำเสนอความสามารถด้านการออกแบบ Landing Page ให้ลูกค้าที่สนใจจ้างงาน"
     },
     "techStack": ["HTML5", "Tailwind CSS", "CSS3", "JavaScript", "GitHub Pages"],
@@ -62,15 +62,8 @@
       "th": "TableSchedule"
     },
     "description": {
-      "en": "A responsive class schedule generator built with HTML, CSS, and
-      vanilla JavaScript. Users can paste copied course information to
-      automatically detect course codes, sections, instructors, rooms, days, and
-      times. Features multiple schedule themes, mobile-friendly views, local
-      browser processing, and PNG export in 1920x1080 and full-size formats.",
-      "th": "เว็บสร้างตารางเรียนอัตโนมัติ พัฒนาด้วย HTML, CSS และ JavaScript แบบ Vanilla
-      ผู้ใช้สามารถวางข้อมูลรายวิชาที่คัดลอกมา เพื่อให้ระบบตรวจจับรหัสวิชา หมู่เรียน ผู้สอน ห้อง วัน
-      และเวลา พร้อมรองรับหลายธีม การแสดงผลบนมือถือ การประมวลผลภายในเบราว์เซอร์
-      และดาวน์โหลดตารางเป็น PNG ขนาด 1920x1080 หรือแบบ Full Size"
+      "en": "A responsive class schedule generator built with HTML, CSS, and vanilla JavaScript. Users can paste copied course information to automatically detect course codes, sections, instructors, rooms, days, and times. Features multiple schedule themes, mobile-friendly views, local browser processing, and PNG export in both 1920x1080 and full-size formats.",
+      "th": "เว็บสร้างตารางเรียนอัตโนมัติ พัฒนาด้วย HTML, CSS และ JavaScript แบบ Vanilla ผู้ใช้สามารถวางข้อมูลรายวิชาที่คัดลอกมา เพื่อให้ระบบตรวจจับรหัสวิชา หมู่เรียน ผู้สอน ห้อง วัน และเวลาโดยอัตโนมัติ พร้อมรองรับหลายธีม การแสดงผลบนมือถือ การประมวลผลภายในเบราว์เซอร์ และดาวน์โหลดตารางเป็น PNG ทั้งขนาด 1920x1080 และ Full Size"
     },
     "techStack": [
       "HTML5",
