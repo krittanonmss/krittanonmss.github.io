@@ -28,6 +28,24 @@
     "liveDemo": ""
   },
   {
+    "id": 3,
+    "title": {
+      "en": "MILDSTONE",
+      "th": "MILDSTONE"
+    },
+    "description": {
+      "en": "A business operations and inventory management system built withLaravel. It reads Express DBF data to provide real-time views of availableinventory, sales, returns, incoming stock, monthly accounting, receivables, users, permissions, and audit logs. Features automated DBF synchronization, role-based access control, two-factor authentication, PDF reporting, backups, performance monitoring, and production-ready Windows deployment tools.",
+      "th": "ระบบบริหารงานและจัดการคลังสินค้าที่พัฒนาด้วย Laravel สามารถอ่านข้อมูลจาก Express DBF เพื่อแสดงคลังพร้อมขาย รายการขาย การคืนสินค้า สินค้าเข้าคลัง บัญชีรายเดือน ลูกหนี้ ผู้ใช้งาน สิทธิ์ และบันทึกการตรวจสอบ พร้อมระบบซิงก์ DBF อัตโนมัติ การกำหนดสิทธิ์ตามบทบาท การยืนยันตัวตนสองขั้นตอน รายงาน PDF ระบบสำรองข้อมูล การตรวจสอบประสิทธิภาพ และเครื่องมือติดตั้งสำหรับใช้งานจริงบน Windows"
+    },
+    "techStack": [
+      "Laravel",
+      "PHP",
+      "SQLite",
+      "JavaScript"
+    ],
+    "github": "https://github.com/krittanonmss/MILDSTONE"
+  },
+  {
     "id": 4,
     "title": {
       "en": "Car Service Tracker",
@@ -73,24 +91,6 @@
     ],
     "github": "https://github.com/krittanonmss/TableSchedule",
     "liveDemo": "https://www.krittanon.site/TableSchedule/"
-  },
-  {
-    "id": 3,
-    "title": {
-      "en": "MILDSTONE",
-      "th": "MILDSTONE"
-    },
-    "description": {
-      "en": "A business operations and inventory management system built withLaravel. It reads Express DBF data to provide real-time views of availableinventory, sales, returns, incoming stock, monthly accounting, receivables, users, permissions, and audit logs. Features automated DBF synchronization, role-based access control, two-factor authentication, PDF reporting, backups, performance monitoring, and production-ready Windows deployment tools.",
-      "th": "ระบบบริหารงานและจัดการคลังสินค้าที่พัฒนาด้วย Laravel สามารถอ่านข้อมูลจาก Express DBF เพื่อแสดงคลังพร้อมขาย รายการขาย การคืนสินค้า สินค้าเข้าคลัง บัญชีรายเดือน ลูกหนี้ ผู้ใช้งาน สิทธิ์ และบันทึกการตรวจสอบ พร้อมระบบซิงก์ DBF อัตโนมัติ การกำหนดสิทธิ์ตามบทบาท การยืนยันตัวตนสองขั้นตอน รายงาน PDF ระบบสำรองข้อมูล การตรวจสอบประสิทธิภาพ และเครื่องมือติดตั้งสำหรับใช้งานจริงบน Windows"
-    },
-    "techStack": [
-      "Laravel",
-      "PHP",
-      "SQLite",
-      "JavaScript"
-    ],
-    "github": "https://github.com/krittanonmss/MILDSTONE"
   }
 
 ]
