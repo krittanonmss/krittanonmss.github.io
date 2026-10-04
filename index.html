@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kritanon Museesut - Portfolio</title>
+  <title>Krittanon Museesut - Portfolio</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -70,19 +70,19 @@
 
       <div class="mx-auto max-w-6xl">
         <div class="mx-auto max-w-3xl rounded-3xl border border-slate-200 bg-white/75 p-8 text-center shadow-xl shadow-slate-200/60 backdrop-blur dark:border-white/10 dark:bg-white/[0.04] dark:shadow-slate-950/40 sm:p-12">
-          <img src="project/img/krittanon.jpg" alt="Kritanon Museesut" class="mx-auto mb-6 h-40 w-40 rounded-full border-4 border-white object-cover shadow-xl dark:border-white/10">
+          <img src="project/img/krittanon.jpg" alt="Krittanon Museesut" class="mx-auto mb-6 h-40 w-40 rounded-full border-4 border-white object-cover shadow-xl dark:border-white/10">
 
           <p data-i18n="hero.badge" class="mb-3 text-sm font-semibold uppercase tracking-[0.28em] text-blue-600 dark:text-blue-300">Portfolio</p>
 
           <h1 data-i18n="hero.name" class="text-4xl font-bold tracking-tight text-slate-950 dark:text-white sm:text-5xl">
-            Kritanon Museesut
+            Krittanon Museesut
           </h1>
 
           <p data-i18n="hero.role" class="mt-4 text-lg font-medium text-slate-600 dark:text-slate-300">
             Computer Science Student @ Kasetsart University
           </p>
 
-          <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+          <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap">
             <button
               id="view-projects-button"
               type="button"
@@ -91,6 +91,8 @@
             >
               View Projects
             </button>
+            <a href="resume/krittanon_resume_TH.pdf" target="_blank" rel="noopener noreferrer" data-i18n="hero.resume" class="inline-flex items-center justify-center gap-2 rounded-2xl border border-blue-200 bg-blue-50 px-6 py-3 text-sm font-semibold text-blue-700 shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-100 dark:border-blue-400/20 dark:bg-blue-400/10 dark:text-blue-300 dark:hover:bg-blue-400/20">View Resume (PDF)</a>
+
 
             <button
               id="github-button"
@@ -120,37 +122,83 @@
           <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-white/[0.04]">
             <h3 data-i18n="skills.programming" class="mb-5 text-lg font-bold text-slate-950 dark:text-white">Programming Languages</h3>
             <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
-              <div class="skill-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="PHP Logo"><span>PHP</span></div>
-              <div class="skill-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript Logo"><span>JavaScript</span></div>
-              <div class="skill-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" alt="SQL Logo"><span>SQL</span></div>
-              <div class="skill-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python Logo"><span>Python</span></div>
-              <div class="skill-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java Logo"><span>Java</span></div>
+              <div class="skill-item"><img src="icon/tech/php-original.svg" alt="PHP Logo"><span>PHP</span></div>
+              <div class="skill-item"><img src="icon/tech/javascript-original.svg" alt="JavaScript Logo"><span>JavaScript</span></div>
+              <div class="skill-item"><img src="icon/tech/mysql-original.svg" alt="SQL Logo"><span>SQL</span></div>
+              <div class="skill-item"><img src="icon/tech/python-original.svg" alt="Python Logo"><span>Python</span></div>
+              <div class="skill-item"><img src="icon/tech/java-original.svg" alt="Java Logo"><span>Java</span></div>
+              <div class="skill-item"><img src="icon/tech/typescript-original.svg" alt="TypeScript logo" loading="lazy"><span>TypeScript</span></div>
+              <div class="skill-item"><img src="icon/tech/c-original.svg" alt="C logo" loading="lazy"><span>C</span></div>
+              <div class="skill-item"><img src="icon/tech/css3-original.svg" alt="CSS logo" loading="lazy"><span>CSS</span></div>
             </div>
           </div>
 
           <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-white/[0.04]">
             <h3 data-i18n="skills.tools" class="mb-5 text-lg font-bold text-slate-950 dark:text-white">Tools & Collaboration</h3>
             <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
-              <div class="skill-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="Git Logo"><span>Git</span></div>
-              <div class="skill-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" alt="GitHub Logo"><span>GitHub</span></div>
-              <div class="skill-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="Linux Logo"><span>Linux CLI</span></div>
-              <div class="skill-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/notion/notion-original.svg" alt="Notion Logo"><span>Notion</span></div>
-              <div class="skill-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jira/jira-original.svg" alt="Jira Logo"><span>Jira</span></div>
+              <div class="skill-item"><img src="icon/tech/git-original.svg" alt="Git Logo"><span>Git</span></div>
+              <div class="skill-item"><img src="icon/tech/github-original.svg" alt="GitHub Logo"><span>GitHub</span></div>
+              <div class="skill-item"><img src="icon/tech/linux-original.svg" alt="Linux Logo"><span>Linux CLI</span></div>
+              <div class="skill-item"><img src="icon/tech/notion-original.svg" alt="Notion Logo"><span>Notion</span></div>
+              <div class="skill-item"><img src="icon/tech/jira-original.svg" alt="Jira Logo"><span>Jira</span></div>
+              <div class="skill-item"><img src="icon/tech/vscode-original.svg" alt="VS Code logo" loading="lazy"><span>VS Code</span></div>
+              <div class="skill-item"><img src="icon/tech/npm-original-wordmark.svg" alt="npm logo" loading="lazy"><span>npm</span></div>
+              <div class="skill-item"><img src="icon/tech/composer-original.svg" alt="Composer logo" loading="lazy"><span>Composer</span></div>
+              <div class="skill-item"><img src="icon/tech/vite-original.svg" alt="Vite logo" loading="lazy"><span>Vite</span></div>
+              <div class="skill-item"><img src="icon/tech/webpack-original.svg" alt="Webpack logo" loading="lazy"><span>Webpack</span></div>
             </div>
+            <div class="mt-5 flex flex-wrap gap-2"><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">XAMPP</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">Laravel Artisan</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">Tinker</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">Pail</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">phpMyAdmin</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">ts-node</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">tsx</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">Requirements Gathering</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">Workflow Design</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">API Contract</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">COCOMO II</span></div>
           </div>
 
           <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-white/[0.04]">
             <h3 data-i18n="skills.frameworks" class="mb-5 text-lg font-bold text-slate-950 dark:text-white">Frameworks & Technologies</h3>
             <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-              <div class="skill-item"><img src="https://laravel.com/img/logomark.min.svg" alt="Laravel Logo"><span>Laravel</span></div>
-              <div class="skill-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="React Logo"><span>React</span></div>
-              <div class="skill-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="Node.js Logo"><span>Node.js</span></div>
-              <div class="skill-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" alt="MySQL Logo"><span>MySQL</span></div>
+              <div class="skill-item"><img src="icon/tech/laravel-original.svg" alt="Laravel Logo"><span>Laravel</span></div>
+              <div class="skill-item"><img src="icon/tech/react-original.svg" alt="React Logo"><span>React</span></div>
+              <div class="skill-item"><img src="icon/tech/nodejs-original.svg" alt="Node.js Logo"><span>Node.js</span></div>
+              <div class="skill-item"><img src="icon/tech/mysql-original.svg" alt="MySQL Logo"><span>MySQL</span></div>
               <div class="skill-item"><img src="icon/tailwind.png" alt="TailwindCSS Logo"><span>TailwindCSS</span></div>
-              <div class="skill-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML Logo"><span>HTML</span></div>
-              <div class="skill-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cloudflare/cloudflare-original.svg" alt="Cloudflare Logo"><span>Cloudflare</span></div>
-              <div class="skill-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/azure/azure-plain.svg" alt="Azure Logo"><span>Azure</span></div>
+              <div class="skill-item"><img src="icon/tech/html5-original.svg" alt="HTML Logo"><span>HTML</span></div>
+              <div class="skill-item"><img src="icon/tech/cloudflare-original.svg" alt="Cloudflare Logo"><span>Cloudflare</span></div>
+              <div class="skill-item"><img src="icon/tech/azure-plain.svg" alt="Azure Logo"><span>Azure</span></div>
+              <div class="skill-item"><img src="icon/tech/nextjs-original.svg" alt="Next.js logo" loading="lazy"><span>Next.js</span></div>
+              <div class="skill-item"><img src="icon/tech/nestjs-original.svg" alt="NestJS logo" loading="lazy"><span>NestJS</span></div>
+              <div class="skill-item"><img src="icon/tech/laravel-original.svg" alt="Blade logo" loading="lazy"><span>Blade</span></div>
+              <div class="skill-item"><img src="icon/tech/axios-plain.svg" alt="Axios logo" loading="lazy"><span>Axios</span></div>
+              <div class="skill-item"><img src="icon/tech/rxjs-original.svg" alt="RxJS logo" loading="lazy"><span>RxJS</span></div>
             </div>
+            <div class="mt-5 flex flex-wrap gap-2"><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">REST API</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">OpenAPI</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">Swagger</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">Stoplight Prism</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">LINE Messaging API</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">Webhooks</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">TMD API</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">Tesseract.js</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">Sharp</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">jsQR</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">QRCode</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">Dompdf</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">PDF Export</span></div>
+          </div>
+          <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-white/[0.04]">
+            <h3 data-i18n="skills.data" class="mb-5 text-lg font-bold text-slate-950 dark:text-white">Databases & Data</h3>
+            <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+              <div class="skill-item"><img src="icon/tech/postgresql-original.svg" alt="PostgreSQL logo" loading="lazy"><span>PostgreSQL</span></div>
+              <div class="skill-item"><img src="icon/tech/sqlite-original.svg" alt="SQLite logo" loading="lazy"><span>SQLite</span></div>
+              <div class="skill-item"><img src="icon/tech/supabase-original.svg" alt="Supabase logo" loading="lazy"><span>Supabase</span></div>
+              <div class="skill-item"><img src="icon/tech/json-original.svg" alt="JSON logo" loading="lazy"><span>JSON</span></div>
+            </div>
+            <div class="mt-5 flex flex-wrap gap-2"><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">MySQL</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">Express DBF</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">XML</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">CSV</span></div>
+          </div>
+          <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-white/[0.04]">
+            <h3 data-i18n="skills.testing" class="mb-5 text-lg font-bold text-slate-950 dark:text-white">Testing & Code Quality</h3>
+            <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+              <div class="skill-item"><img src="icon/tech/jest-plain.svg" alt="Jest logo" loading="lazy"><span>Jest</span></div>
+              <div class="skill-item"><img src="icon/tech/php-original.svg" alt="PHPUnit logo" loading="lazy"><span>PHP / PHPUnit</span></div>
+              <div class="skill-item"><img src="icon/tech/k6-original.svg" alt="Grafana k6 logo" loading="lazy"><span>Grafana k6</span></div>
+              <div class="skill-item"><img src="icon/tech/eslint-original.svg" alt="ESLint logo" loading="lazy"><span>ESLint</span></div>
+              <div class="skill-item"><img src="icon/tech/sonarqube-original.svg" alt="SonarQube logo" loading="lazy"><span>SonarQube</span></div>
+            </div>
+            <div class="mt-5 flex flex-wrap gap-2"><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">Prettier</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">Stryker Mutator</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">Mockery</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">SonarScanner</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">Unit / Integration Testing</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">Test Coverage</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">Load Testing</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">Mutation Testing</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">Laravel Pint</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">TypeScript Type Checking</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">Zod</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">class-validator</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">class-transformer</span></div>
+          </div>
+          <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-white/[0.04]">
+            <h3 data-i18n="skills.deploy" class="mb-5 text-lg font-bold text-slate-950 dark:text-white">Deployment & Servers</h3>
+            <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+              <div class="skill-item"><img src="icon/tech/docker-original.svg" alt="Docker logo" loading="lazy"><span>Docker</span></div>
+              <div class="skill-item"><img src="icon/tech/vercel-original.svg" alt="Vercel logo" loading="lazy"><span>Vercel</span></div>
+              <div class="skill-item"><img src="icon/tech/windows11-original.svg" alt="Windows Server logo" loading="lazy"><span>Windows Server</span></div>
+              <div class="skill-item"><img src="icon/tech/powershell-original.svg" alt="PowerShell logo" loading="lazy"><span>PowerShell</span></div>
+            </div>
+            <div class="mt-5 flex flex-wrap gap-2"><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">Docker Compose</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">IIS</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">FastCGI</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">HTTPS / SSL</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">Database Backup</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">Queue Workers</span><span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">Scheduler / Cron</span></div>
           </div>
         </div>
       </div>
@@ -211,7 +259,7 @@
   </main>
 
   <footer class="border-t border-slate-200 bg-white px-4 py-8 text-center text-sm text-slate-500 dark:border-white/10 dark:bg-slate-950 dark:text-slate-400">
-    <p data-i18n="footer.copyright">&copy; 2025 Kritanon Museesut. All rights reserved.</p>
+    <p data-i18n="footer.copyright">&copy; 2026 Krittanon Museesut. All rights reserved.</p>
   </footer>
 </body>
 </html>

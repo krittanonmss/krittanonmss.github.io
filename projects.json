@@ -2,95 +2,165 @@
   {
     "id": 1,
     "title": {
-      "en": "Personal Portfolio Website",
-      "th": "Personal Portfolio Website"
+      "th": "MILDSTONE",
+      "en": "MILDSTONE"
     },
     "description": {
-      "en": "A portfolio website built with HTML, CSS, and JavaScript. Showcases my skills, projects, and contact information.",
-      "th": "เว็บไซต์พอร์ตโฟลิโอที่พัฒนาด้วย HTML, CSS และ JavaScript สำหรับแสดงทักษะ ผลงาน และข้อมูลติดต่อ"
-    },
-    "techStack": ["HTML", "CSS", "JavaScript", "GitHub"],
-    "github": "https://github.com/krittanonmss/krittanonmss.github.io",
-    "liveDemo": "https://krittanonmss.github.io/"
-  },
-  {
-    "id": 2,
-    "title": {
-      "en": "PAPAIWAT",
-      "th": "PAPAIWAT"
-    },
-    "description": {
-      "en": "A Laravel-based CMS and tourism platform for managing Thai temple information, articles, media, pages, menus, and admin workflows.",
-      "th": "ระบบ CMS และแพลตฟอร์มท่องเที่ยวสำหรับจัดการข้อมูลวัดไทย บทความ รูปภาพ หน้าเว็บไซต์ เมนู และระบบแอดมิน พัฒนาด้วย Laravel"
-    },
-    "techStack": ["Laravel", "PHP", "MySQL", "Tailwind CSS", "JavaScript"],
-    "github": "https://github.com/krittanonmss/PAPAIWAT",
-    "liveDemo": ""
-  },
-  {
-    "id": 3,
-    "title": {
-      "en": "MILDSTONE",
-      "th": "MILDSTONE"
-    },
-    "description": {
-      "en": "A business operations and inventory management system built withLaravel. It reads Express DBF data to provide real-time views of availableinventory, sales, returns, incoming stock, monthly accounting, receivables, users, permissions, and audit logs. Features automated DBF synchronization, role-based access control, two-factor authentication, PDF reporting, backups, performance monitoring, and production-ready Windows deployment tools.",
-      "th": "ระบบบริหารงานและจัดการคลังสินค้าที่พัฒนาด้วย Laravel สามารถอ่านข้อมูลจาก Express DBF เพื่อแสดงคลังพร้อมขาย รายการขาย การคืนสินค้า สินค้าเข้าคลัง บัญชีรายเดือน ลูกหนี้ ผู้ใช้งาน สิทธิ์ และบันทึกการตรวจสอบ พร้อมระบบซิงก์ DBF อัตโนมัติ การกำหนดสิทธิ์ตามบทบาท การยืนยันตัวตนสองขั้นตอน รายงาน PDF ระบบสำรองข้อมูล การตรวจสอบประสิทธิภาพ และเครื่องมือติดตั้งสำหรับใช้งานจริงบน Windows"
+      "th": "ระบบอ่านข้อมูล Express DBF เพื่อแสดงคลังพร้อมขาย การขาย คืนสินค้า และบัญชีรายเดือน พร้อมสิทธิ์ผู้ใช้และ Audit Log รวมถึงติดตั้งและตั้งค่าเซิร์ฟเวอร์สำหรับใช้งานระบบ",
+      "en": "Business system reading Express DBF data for available inventory, sales, returns and monthly accounting, with user permissions and audit logs. Includes server installation and configuration."
     },
     "techStack": [
       "Laravel",
       "PHP",
       "SQLite",
-      "JavaScript"
+      "Express DBF",
+      "Windows Server",
+      "IIS"
     ],
-    "github": "https://github.com/krittanonmss/MILDSTONE"
+    "github": "",
+    "liveDemo": ""
+  },
+  {
+    "id": 2,
+    "title": {
+      "th": "Jod-Jai (จดใจ)",
+      "en": "Jod-Jai (จดใจ)"
+    },
+    "description": {
+      "th": "บอทบันทึกรายจ่ายผ่าน LINE OA อ่านสลิปด้วย Tesseract OCR ให้ผู้ใช้ตรวจและยืนยันก่อนบันทึก พร้อมสรุปรายจ่ายและส่งออก CSV",
+      "en": "LINE OA expense bot that reads receipts with Tesseract OCR, asks users to review and confirm entries, and provides expense summaries and CSV export."
+    },
+    "techStack": [
+      "Next.js",
+      "TypeScript",
+      "Supabase",
+      "LINE Messaging API",
+      "Tesseract.js"
+    ],
+    "github": "https://github.com/krittanonmss/Jod-Jai",
+    "liveDemo": "https://jod-jai.vercel.app",
+    "status": "active"
+  },
+  {
+    "id": 3,
+    "title": {
+      "th": "Weather Farm / FarmWeather",
+      "en": "Weather Farm / FarmWeather"
+    },
+    "description": {
+      "th": "API จัดการเกษตรกรและแปลงเพาะปลูก เชื่อมข้อมูลอากาศจาก TMD ประเมินความเสี่ยงตามชนิดพืชและระยะเติบโต พร้อมระบบแจ้งเตือนภายในระบบ",
+      "en": "API for farmers and crop plots, integrating TMD weather data to assess risks by crop type and growth stage, with an in-app notification inbox."
+    },
+    "techStack": [
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL",
+      "Docker",
+      "TMD API"
+    ],
+    "github": "https://github.com/krittanonmss/farmweather",
+    "liveDemo": "",
+    "status": ""
   },
   {
     "id": 4,
     "title": {
-      "en": "Car Service Tracker",
-      "th": "Car Service Tracker"
+      "th": "PAPAIWAT",
+      "en": "PAPAIWAT"
     },
     "description": {
-      "en": "An internal vehicle service management system for tracking customers, vehicles, vehicle tax renewals, insurance, and inspection expiration dates. Includes a dashboard for monitoring service status, CSV import support, and SMS notification features for customer reminders. This demo version was built using HTML, Tailwind CSS, and vanilla JavaScript for presentation purposes only. The actual production source code and backend system are not publicly available.",
-      "th": "ระบบจัดการบริการรถยนต์ภายในองค์กร สำหรับติดตามข้อมูลลูกค้า รถยนต์ วันหมดอายุภาษี ประกันภัย และตรวจสภาพรถ พร้อมระบบแดชบอร์ดติดตามสถานะบริการ รองรับการนำเข้าข้อมูลผ่าน CSV และระบบแจ้งเตือน SMS สำหรับเตือนลูกค้าเกี่ยวกับบริการที่ใกล้หมดอายุ โดยเวอร์ชันนี้เป็นเพียง Demo ที่พัฒนาด้วย HTML, Tailwind CSS และ JavaScript แบบ Vanilla เพื่อใช้สำหรับสาธิตการทำงานเท่านั้น ส่วน Source Code และระบบ Backend จริงไม่ได้เปิดเผยสู่สาธารณะ"
+      "th": "CMS จัดการข้อมูลวัด บทความ สื่อ เมนู และ Page Builder พร้อมระบบสิทธิ์ผู้ใช้งาน",
+      "en": "CMS for temple information, articles, media, menus and a page builder, with user permissions."
     },
-    "techStack": ["HTML5", "Tailwind CSS", "JavaScript", "GitHub Pages"],
-    "github": "https://github.com/krittanonmss/car-service-tracker-demo",
-    "liveDemo": "https://www.krittanon.site/car-service-tracker-demo/"
+    "techStack": [
+      "Laravel",
+      "MySQL",
+      "Tailwind CSS",
+      "Docker"
+    ],
+    "github": "https://github.com/krittanonmss/PAPAIWAT",
+    "liveDemo": "",
+    "status": "development"
   },
   {
     "id": 5,
     "title": {
-      "en": "Premium Product Landing Page",
-      "th": "Premium Product Landing Page"
+      "th": "Focus — Todo List",
+      "en": "Focus — Todo List"
     },
     "description": {
-      "en": "A premium product landing page demo built with HTML, Tailwind CSS, custom CSS, and vanilla JavaScript. Designed to showcase a modern product presentation style with smooth scroll animations, responsive layout, bilingual content support, product highlight sections, pricing CTA, and Apple-inspired visual effects. This project was created as a frontend demo to showcase landing page design capabilities for potential freelance clients.",
-      "th": "เว็บไซต์ Landing Page สำหรับนำเสนอสินค้าแบบพรีเมียม พัฒนาด้วย HTML, Tailwind CSS, Custom CSS และ JavaScript แบบ Vanilla ออกแบบเพื่อแสดงตัวอย่างการนำเสนอสินค้าในสไตล์ทันสมัย พร้อม Animation ตอนเลื่อนหน้า รองรับ Responsive Layout รองรับสองภาษา มีส่วนแสดงจุดเด่นสินค้า ราคา ปุ่ม Call to Action และเอฟเฟกต์ภาพแบบ Apple-inspired โดยโปรเจกต์นี้จัดทำเป็น Frontend Demo สำหรับนำเสนอความสามารถด้านการออกแบบ Landing Page ให้ลูกค้าที่สนใจจ้างงาน"
+      "th": "แอปจัดการงานแบบ Full Stack แยก Frontend และ Backend รองรับหลาย Workspace ค้นหา กรองสถานะ และบันทึกข้อมูลผ่าน REST API ลง PostgreSQL พร้อมตรวจสอบข้อมูลและทดสอบ API / Browser",
+      "en": "Full stack task manager with separate frontend and backend, multiple workspaces, search and status filters, persistent PostgreSQL storage through a REST API, validation, and API and browser tests."
     },
-    "techStack": ["HTML5", "Tailwind CSS", "CSS3", "JavaScript", "GitHub Pages"],
-    "github": "https://github.com/krittanonmss/Landing-page-demo",
-    "liveDemo": "https://www.krittanon.site/Landing-page-demo/"
+    "techStack": [
+      "React",
+      "TypeScript",
+      "Vite",
+      "AdonisJS",
+      "Lucid ORM",
+      "PostgreSQL",
+      "Docker"
+    ],
+    "github": "https://github.com/krittanonmss/focus",
+    "liveDemo": ""
   },
   {
     "id": 6,
     "title": {
-      "en": "TableSchedule",
-      "th": "TableSchedule"
+      "th": "ICG_CV — Interactive 3D Portfolio",
+      "en": "ICG_CV — Interactive 3D Portfolio"
     },
     "description": {
-      "en": "A responsive class schedule generator built with HTML, CSS, and vanilla JavaScript. Users can paste copied course information to automatically detect course codes, sections, instructors, rooms, days, and times. Features multiple schedule themes, mobile-friendly views, local browser processing, and PNG export in both 1920x1080 and full-size formats.",
-      "th": "เว็บสร้างตารางเรียนอัตโนมัติ พัฒนาด้วย HTML, CSS และ JavaScript แบบ Vanilla ผู้ใช้สามารถวางข้อมูลรายวิชาที่คัดลอกมา เพื่อให้ระบบตรวจจับรหัสวิชา หมู่เรียน ผู้สอน ห้อง วัน และเวลาโดยอัตโนมัติ พร้อมรองรับหลายธีม การแสดงผลบนมือถือ การประมวลผลภายในเบราว์เซอร์ และดาวน์โหลดตารางเป็น PNG ทั้งขนาด 1920x1080 และ Full Size"
+      "th": "ห้องพอร์ตโฟลิโอ 3D แบบโต้ตอบ เลือกเปิดผลงานผ่านหนังสือในห้อง สลับแสงกลางวันและกลางคืน พร้อมตัวอย่าง Canvas, โมเดล 3D, แสง วัสดุ Shader และการโหลด OBJ",
+      "en": "Interactive 3D portfolio room with clickable project books and day/night lighting, featuring canvas experiments, 3D models, lighting, materials, shaders and OBJ loading."
     },
     "techStack": [
-      "HTML5",
-      "CSS3",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Three.js",
+      "Blender"
+    ],
+    "github": "https://github.com/krittanonmss/ICG_CV",
+    "liveDemo": "https://www.krittanon.site/ICG_CV/"
+  },
+  {
+    "id": 7,
+    "title": {
+      "th": "TableSchedule",
+      "en": "TableSchedule"
+    },
+    "description": {
+      "th": "เว็บสร้างตารางเรียนจากข้อมูลรายวิชาที่คัดลอกมา รองรับหลายธีม การแสดงผลบนมือถือ และส่งออก PNG",
+      "en": "Class schedule generator from pasted course information, with themes, mobile layouts and PNG export."
+    },
+    "techStack": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "github": "https://github.com/krittanonmss/TableSchedule",
+    "liveDemo": "https://www.krittanon.site/TableSchedule/",
+    "status": ""
+  },
+  {
+    "id": 8,
+    "title": {
+      "th": "Personal Portfolio Website",
+      "en": "Personal Portfolio Website"
+    },
+    "description": {
+      "th": "เว็บไซต์แสดงทักษะ ประสบการณ์ ผลงาน และเรซูเม่ รองรับภาษาไทยและอังกฤษ",
+      "en": "Bilingual portfolio showcasing skills, experience, projects and a downloadable resume."
+    },
+    "techStack": [
+      "HTML",
+      "CSS",
       "JavaScript",
       "GitHub Pages"
     ],
-    "github": "https://github.com/krittanonmss/TableSchedule",
-    "liveDemo": "https://www.krittanon.site/TableSchedule/"
+    "github": "https://github.com/krittanonmss/krittanonmss.github.io",
+    "liveDemo": "https://www.krittanon.site/",
+    "status": ""
   }
-
 ]

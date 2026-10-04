@@ -18,7 +18,7 @@ const translations = {
     'nav.contact': 'Contact',
 
     'hero.badge': 'Portfolio',
-    'hero.name': 'Kritanon Museesut',
+    'hero.name': 'Krittanon Museesut',
     'hero.role': 'Computer Science Student @ Kasetsart University',
     'hero.viewProjects': 'View Projects',
     'hero.github': 'GitHub',
@@ -40,7 +40,7 @@ const translations = {
     'contact.email': 'Email',
     'contact.phone': 'Phone',
 
-    'footer.copyright': '© 2025 Kritanon Museesut. All rights reserved.'
+    'footer.copyright': '© 2026 Krittanon Museesut. All rights reserved.'
   },
 
   th: {
@@ -50,7 +50,7 @@ const translations = {
     'nav.contact': 'ติดต่อ',
 
     'hero.badge': 'Portfolio',
-    'hero.name': 'Kritanon Museesut',
+    'hero.name': 'Krittanon Museesut',
     'hero.role': 'นิสิตวิทยาการคอมพิวเตอร์ มหาวิทยาลัยเกษตรศาสตร์',
     'hero.viewProjects': 'ดูผลงาน',
     'hero.github': 'GitHub',
@@ -72,9 +72,23 @@ const translations = {
     'contact.email': 'อีเมล',
     'contact.phone': 'เบอร์โทร',
 
-    'footer.copyright': '© 2025 Kritanon Museesut. All rights reserved.'
+    'footer.copyright': '© 2026 Krittanon Museesut. All rights reserved.'
   }
 };
+
+Object.assign(translations.en, {
+  "hero.resume": "View Resume (PDF)",
+  "skills.data": "Databases & Data",
+  "skills.testing": "Testing & Code Quality",
+  "skills.deploy": "Deployment & Servers"
+});
+Object.assign(translations.th, {
+  "hero.resume": "เปิดดูเรซูเม่ (PDF)",
+  "hero.name": "กฤตานน มุสีสุทธิ์",
+  "skills.data": "ฐานข้อมูลและข้อมูล",
+  "skills.testing": "การทดสอบและคุณภาพโค้ด",
+  "skills.deploy": "การติดตั้งและเซิร์ฟเวอร์"
+});
 
 let currentLanguage = localStorage.getItem('language') || 'en';
 let loadedProjects = [];
@@ -278,7 +292,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const image = item.querySelector('img');
 
     if (image) {
-      image.classList.add('h-9', 'w-9', 'object-contain');
+      image.classList.add('h-9', 'w-9', 'object-contain', 'rounded-md', 'dark:bg-white', 'dark:p-1');
     }
   });
 
